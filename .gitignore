@@ -21,3 +21,6 @@ env/
 # Ignore other common temporary files
 *.swp
 *.swo
+
+#Ignore Egg-info Directories
+.egg-info/

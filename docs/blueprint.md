@@ -1,4 +1,4 @@
-Since you are leaning toward **Replay.me.CLI** and want to follow Pythonic naming conventions (PEP 8 for packages and common CLI naming patterns), here are some refined suggestions.
+Since you are leaning toward **replayer** and want to follow Pythonic naming conventions (PEP 8 for packages and common CLI naming patterns), here are some refined suggestions.
 
 In the Python ecosystem, package names are typically lowercase and avoid underscores unless necessary. For CLI tools, they often use a single, punchy command name.
 
@@ -29,7 +29,7 @@ Python developers love a good library pun or reference to the language's interna
 ---
 
 ### Recommended Package Structure
-If you go with **Replay.meCLI**, your project structure should look like this to remain compliant with modern Python standards (`pyproject.toml`):
+If you go with **replayer**, your project structure should look like this to remain compliant with modern Python standards (`pyproject.toml`):
 
 ```text
 replay-me/

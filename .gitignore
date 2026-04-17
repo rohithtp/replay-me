@@ -23,4 +23,4 @@ env/
 *.swo
 
 #Ignore Egg-info Directories
-.egg-info/
+*.egg-info/

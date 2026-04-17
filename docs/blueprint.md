@@ -32,10 +32,10 @@ Python developers love a good library pun or reference to the language's interna
 If you go with **replayer**, your project structure should look like this to remain compliant with modern Python standards (`pyproject.toml`):
 
 ```text
-replay-me/
+replayer/
 ├── pyproject.toml        # Build system & metadata
 ├── src/
-│   └── replay/           # The actual package
+│   └── replayer/         # The actual package (changed from 'replay' to 'replayer')
 │       ├── __init__.py
 │       ├── cli.py        # Entry point for 'replay' command
 │       ├── engine.py     # Filtering/Weighting logic
@@ -49,7 +49,7 @@ In your `pyproject.toml`, you would define the entry point so the user can just 
 
 ```toml
 [project.scripts]
-replay = "replay.cli:main"
+replay = "replayer.cli:main"
 ```
 
 ### My Top Pick: `replayer`

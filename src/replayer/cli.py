@@ -9,6 +9,9 @@ def main():
 
     events_file = sys.argv[1]
     events = parse_events(events_file)
+    if not events:
+        print("No valid events found.")
+        sys.exit(1)
     resume = process_events(events)
     print(resume)
 

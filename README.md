@@ -25,7 +25,7 @@ Replayer is a CLI tool designed to replay career events and generate a resume. T
 
 3. **Install Dependencies**:
    ```sh
-   pip install -r requirements.txt
+   pip install -r requirements.txt; pip install build; 
    ```
 
 4. **Build the Package** (if needed):
@@ -36,6 +36,7 @@ Replayer is a CLI tool designed to replay career events and generate a resume. T
 5. **Install the Package**:
    ```sh
    pip install .
+   pip install -e .
    ```
 
 ## Usage

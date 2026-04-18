@@ -49,7 +49,7 @@ In your `pyproject.toml`, you would define the entry point so the user can just 
 
 ```toml
 [project.scripts]
-replayer = "replayer.cli:main"
+replay = "replayer.cli:main"
 ```
 
 ### My Top Pick: `replayer`

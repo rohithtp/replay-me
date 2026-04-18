@@ -7,14 +7,13 @@ These adhere to the standard of short, descriptive, and lowercase package names 
 
 * **`replayer`**: Very "Pythonic" (like `request`, `black`, or `pytest`). It turns the action into a tool name.
 
-
 ---
 
 ### Recommended Package Structure
 If you go with **replayer**, your project structure should look like this to remain compliant with modern Python standards (`pyproject.toml`):
 
 ```text
-replay-me/
+replayer/
 ├── pyproject.toml        # Build system & metadata
 ├── src/
 │   └── replayer/         # The actual package (changed from 'replay' to 'replayer')

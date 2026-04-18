@@ -5,7 +5,7 @@ In the Python ecosystem, package names are typically lowercase and avoid undersc
 ### 1. The "Pythonic" Refinement
 These adhere to the standard of short, descriptive, and lowercase package names found on PyPI.
 
-* **`replay-me`**: The direct translation. It uses a hyphen (standard for PyPI packages) but the command would likely be `replay`.
+* **`replay-me`**: The direct translation. It uses a hyphen (standard for PyPI packages) but the command would likely be `replayer`.
 * **`replayer`**: Very "Pythonic" (like `request`, `black`, or `pytest`). It turns the action into a tool name.
 * **`historia`**: Latin for history; fits the trend of naming Python libraries with elegant, classical words.
 * **`careerlog`**: Direct and follows the naming style of `logging` or `changelog` tools.
@@ -16,7 +16,7 @@ Since the core of your project is the Event Sourcing pattern, these names signal
 * **`eventsource`**: Very explicit.
 * **`chronicle`**: Suggests a detailed, chronological record of events.
 * **`projector`**: Focuses on the "Projection" part of the architecture—turning the event stream into a resume.
-* **`replay-cli`**: Clear and functional.
+* **`replayer-cli`**: Clear and functional.
 
 ### 3. Creative Python-Centric Puns
 Python developers love a good library pun or reference to the language's internals.
@@ -37,7 +37,7 @@ replayer/
 ├── src/
 │   └── replayer/         # The actual package (changed from 'replay' to 'replayer')
 │       ├── __init__.py
-│       ├── cli.py        # Entry point for 'replay' command
+│       ├── cli.py        # Entry point for 'replayer' command
 │       ├── engine.py     # Filtering/Weighting logic
 │       └── parser.py     # YAML/JSON event handler
 ├── tests/
@@ -45,11 +45,11 @@ replayer/
 ```
 
 ### Installation Hook
-In your `pyproject.toml`, you would define the entry point so the user can just type `replay` in their terminal:
+In your `pyproject.toml`, you would define the entry point so the user can just type `replayer` in their terminal:
 
 ```toml
 [project.scripts]
-replay = "replayer.cli:main"
+replayer = "replayer.cli:main"
 ```
 
 ### My Top Pick: `replayer`

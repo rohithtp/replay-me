@@ -12,9 +12,13 @@ ollama pull qwen2.5-coder:14b
 # We set the 'ollama_chat' prefix to tell aider to use the chat API.
 # The 'architect' mode uses 14b for planning and 7b for writing.
 
+# Check if environment variables are set
+AIDER_MODEL=${AIDER_MODEL:-"ollama_chat/qwen2.5-coder:14b"}
+AIDER_EDITOR_MODEL=${AIDER_EDITOR_MODEL:-"ollama_chat/qwen2.5-coder:7b"}
+
 aider \
-  --model ollama_chat/qwen2.5-coder:14b \
-  --editor-model ollama_chat/qwen2.5-coder:7b \
+  --model $AIDER_MODEL \
+  --editor-model $AIDER_EDITOR_MODEL \
   --architect \
   --map-tokens 1024 \
   --cache-prompts \
